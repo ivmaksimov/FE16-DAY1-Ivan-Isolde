@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermediate exercises JS day 1</title>
+  </head>
+  <body>
+    <!--Exercise 1
+
+      Write a JavaScript program that will sort the following values alphabetically: Tesla, Audi, Renault, Volvo, Mazda, Fiat and Ferrari.
+
+        (Use an array to contain these values) 
+
+        Exercise 2
+Create a program where:
+
+
+
+1. The first array contains the following values:
+
+ apple, banana, kiwi
+
+Using different methods, the output should be as follows:
+
+apple, banana, kiwi, orange
+
+apple, banana, kiwi
+
+(Each statement should be outputted on a separate line.)
+
+
+
+2. The second array contains the following values:
+
+monkey, horse, dog
+
+Using different methods, the output should be as follows:
+
+dog, horse, monkey
+
+cat, dog, horse, monkey
+
+
+Exercise 3
+
+Create a variable containing the following string:
+
+"mango/cherries/kiwi/grapes/pear/peach/orange/lemon"
+
+Create a program that will output each fruit on a separate line in the web browser:
+
+mango 
+
+cherries 
+
+kiwi 
+
+grapes
+
+pear 
+
+peach 
+
+orange 
+
+lemon
+        -->
+    <script>
+      //   Exercise 1
+
+      let cars = [
+        "Tesla",
+        "Audi",
+        "Renault",
+        "Volvo",
+        "Mazda",
+        "Fiat",
+        "Ferrari",
+      ];
+
+      console.log(cars.sort());
+
+      // Exercise 2
+
+      let fruits = ["apple", "banana", "kiwi"];
+
+      fruits.push("orange");
+      console.log(fruits);
+      document.write(fruits.join(", ") + "<br />");
+      ("<br />");
+
+      fruits.pop();
+      console.log(fruits);
+      document.write(fruits.join(", ") + "<br />");
+
+      let animals = ["monkey", "horse", "dog"];
+
+      document.write(
+        animals[2] + ", " + animals[1] + ", " + animals[0] + "<br />"
+      );
+
+      animals.push("cat");
+      document.write(animals.sort().join(", ") + "<br />");
+
+      // Exercise 3
+
+      let fruits1 = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+
+      document.write(fruits1.slice(0, 5) + "<br />");
+      document.write(fruits1.slice(6, 14) + "<br />");
+      document.write(fruits1.slice(15, 19) + "<br />");
+      document.write(fruits1.slice(20, 26) + "<br />");
+      document.write(fruits1.slice(27, 31) + "<br />");
+      document.write(fruits1.slice(32, 37) + "<br />");
+      document.write(fruits1.slice(38, 44) + "<br />");
+      document.write(fruits1.slice(45, 50) + "<br />");
+    </script>
+  </body>
+</html>

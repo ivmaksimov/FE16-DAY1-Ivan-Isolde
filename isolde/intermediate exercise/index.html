@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 1 cars exercise
+        const cars = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"];
+        console.log(cars.sort());
+        
+
+        // 2 fruits exercise
+        const fruits = ["apple", "banana", "kiwi"];
+        fruits.push("orange");
+        document.write(fruits.join(", "));
+        document.write("<br><br>");
+
+        fruits.pop();
+        document.write(fruits.join(", "));
+        document.write("<br><hr>");
+
+        //2  animals exercise
+        const animals = ["monkey", "horse", "dog"];
+        animals.sort();
+        document.write(animals.join(", "));
+        document.write("<br><br>");
+        animals.unshift("cat");
+        document.write(animals.join(", "));
+        document.write("<br><hr>");
+
+        //3 fruits exercise
+        let crop = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+        const cropArray = crop.split("/");
+        document.write(cropArray.join("<br><br>"));
+    </script>
+</body>
+
+</html>
